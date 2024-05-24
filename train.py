@@ -26,6 +26,7 @@ def multigpu_graph_def(model, FLAGS, data, gpu_id=0, loss_type='g'):
 
 if __name__ == "__main__":
     # training data
+    print("STARTING")
     FLAGS = ng.Config('inpaint.yml')
     img_shapes = FLAGS.img_shapes
     with open(FLAGS.data_flist[FLAGS.dataset][0]) as f:
